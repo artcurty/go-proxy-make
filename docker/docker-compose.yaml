@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  wiremock:
+    image: wiremock/wiremock:latest
+    ports:
+      - "3031:8080"
+    volumes:
+      - ./wiremock:/home/wiremock

@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: API Example
+paths:
+  /test:
+    get:
+      proxy_mapping:
+        proxy_host: http://localhost:8080
+        proxy_endpoint: /proxy-test
+        proxy_method: get
+        field_mappings:
+          orderId: id
+          name: product
+          count: quantity

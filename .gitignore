@@ -23,3 +23,10 @@ go.work.sum
 
 # env file
 .env
+
+# Wiremock
+tests/e2e/wiremock/__files
+tests/e2e/wiremock/mappings
+
+## IDE
+.idea/
